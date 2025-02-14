@@ -1,10 +1,14 @@
 import express from 'express';
 import initRouts from './routes/routes.ts';
-// import connectDB from '.database/mon'
+import connectDB from './database/database.ts';
+
 
 const app = express();
-const port = 8080;
+
+connectDB();
 initRouts(app)
+
+const port = 8080;
 
 app.listen(port, () => console.log(`Acesse: http://localhost:${port}/`));
 

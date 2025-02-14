@@ -1,10 +1,10 @@
 import { Express } from 'express';
 import express from 'express'
-import person from './person.ts'
+import task from './tarefas.ts'
 
 export default function (app: Express) 
 {
     app
     .use(express.json())
-    .use('/api/users', person)
+    .use('/tasks', task)
 }
