@@ -1,9 +1,11 @@
 import express from 'express';
 import initRouts from './routes/routes.ts';
 import connectDB from './database/database.ts';
+import cors from 'cors';
 
 
 const app = express();
+app.use(cors())
 
 connectDB();
 initRouts(app)
