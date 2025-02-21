@@ -36,7 +36,7 @@ export const Task: React.FC<Task> = ({ title, description, completed, createdAt,
     // );
 
     return (
-        <tr className="border-t border-[#D9D9D9] border-b ps-2 border-x gap-6 ">
+        <tr className="border-t border-[#D9D9D9] bg-slate-700 border-b ps-2 border-x gap-6 ">
             <td className="px-2">
                 {completed == true ? <div className="rounded-full bg-lime-600 h-5 w-5"></div> : <div className="rounded-full bg-red-600 h-5 w-5"></div>}
             </td>
@@ -45,10 +45,10 @@ export const Task: React.FC<Task> = ({ title, description, completed, createdAt,
             <td className="text-start text-[16px] px-2">{new Date(createdAt).toLocaleString("pt-BR")}</td>
             <td className="text-start text-[16px] px-2">{new Date(updatedAt).toLocaleString("pt-BR")}</td>
             <td className="">
-                <button className="rounded-full flex justify-center ps-1 items-center bg-slate-400 h-8 w-8 hover:scale-105 hover:bg-slate-300" onClick={openModalEdit}>📝</button>
+                <button className="rounded-full flex justify-center  items-center bg-slate-500 h-8 w-8 hover:scale-105 hover:bg-slate-400" onClick={openModalEdit}>📝</button>
             </td>
             <td className="py-2 pe-2">
-                <button className="rounded-full flex justify-center items-center bg-slate-400 h-8 w-8 hover:scale-105 hover:bg-slate-300">❌</button>
+                <button className="rounded-full flex justify-center items-center bg-slate-500 h-8 w-8 hover:scale-105 hover:bg-slate-400">❌</button>
             </td>
         </tr>
     );

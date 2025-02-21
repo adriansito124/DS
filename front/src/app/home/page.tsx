@@ -76,7 +76,7 @@ export default function Home() {
         }
       })
       .then((res) => {
-        alert("Tarefa cadastrada com sucesso")
+        alert("Tarefa editada com sucesso")
         window.location.reload()
       })
       .catch((e) => {
