@@ -24,9 +24,11 @@
     "mongoose": "^8.10.1"
   },
   "devDependencies": {
+    "@prisma/client": "^6.4.1",
     "@types/config": "^3.3.5",
     "@types/crypto-js": "^4.2.2",
     "@types/dotenv": "^8.2.3",
-    "@types/jsonwebtoken": "^9.0.8"
+    "@types/jsonwebtoken": "^9.0.8",
+    "prisma": "^6.4.1"
   }
 }
